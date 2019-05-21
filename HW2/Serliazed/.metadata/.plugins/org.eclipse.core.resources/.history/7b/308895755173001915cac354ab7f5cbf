@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+public class Main {
+
+	
+	 String random = "hi";
+			
+    public static void main(String[] args) {
+        // TODO implement here
+    	this.showTextOutput(random);
+    	
+    	
+    }
+
+}

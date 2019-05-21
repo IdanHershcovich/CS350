@@ -1,0 +1,34 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class TextOutput extends Output {
+
+   
+    private String textOutput;
+
+    /**
+     * 
+     */
+    public void TextOutput() {
+        // TODO implement here
+    }
+
+    /**
+     */
+    public void showTextOutput(String output) {
+        // TODO implement here
+         System.out.println(output);
+    }
+    
+    public void showTextOutput(ArrayList<String> outputArray)
+    {
+    	for(String text: outputArray) {
+            System.out.println(text);
+        }
+
+    }
+
+}

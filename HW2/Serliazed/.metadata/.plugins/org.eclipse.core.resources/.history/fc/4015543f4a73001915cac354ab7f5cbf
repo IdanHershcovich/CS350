@@ -1,0 +1,19 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public abstract class InputOutput {
+
+    /**
+     * Default constructor
+     */
+
+    public void InputOutput() {
+        // TODO implement here
+    }
+    
+    
+
+}

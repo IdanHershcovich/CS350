@@ -1,0 +1,38 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class RankingQuestion extends MatchingQuestion {
+
+    /**
+     * Default constructor
+     */
+    public RankingQuestion() {
+    }
+
+    /**
+     * 
+     */
+    public void RankingQuestion() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void tabulate() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public void show() {
+        // TODO implement here
+        return null;
+    }
+
+}

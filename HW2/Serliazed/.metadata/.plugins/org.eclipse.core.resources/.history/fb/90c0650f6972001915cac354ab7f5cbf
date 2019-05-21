@@ -1,0 +1,121 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public abstract class Questions {
+
+    /**
+     * Default constructor
+     */
+    public Questions() {
+    }
+
+    /**
+     * 
+     */
+    protected String prompt;
+
+    /**
+     * 
+     */
+    protected ArrayList<ResponseCorrectAnswer> responeList;
+
+    /**
+     * 
+     */
+    protected ArrayList<ResponseCorrectAnswer> userResponseList;
+
+    /**
+     * 
+     */
+    protected int questionNumbers;
+
+    /**
+     * 
+     */
+    protected ResponseCorrectAnswer userResponse;
+
+    /**
+     * 
+     */
+    protected Input userInput;
+
+
+
+
+
+    /**
+     * 
+     */
+    public void Questions() {
+        // TODO implement here
+    }
+
+    /**
+     * @param String setPrompt 
+     * @return
+     */
+    public void setPrompt( String setPrompt) {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public String getPrompt() {
+        // TODO implement here
+        return "";
+    }
+
+    /**
+     * @return
+     */
+    public ArrayList<ResponseCorrectAnswer> getUserResponses() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param ArrayList ResponseCorrectAnswer 
+     * @return
+     */
+    public void setUserResponses( ArrayList ResponseCorrectAnswer) {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public int getQuestionNumber() {
+        // TODO implement here
+        return 0;
+    }
+
+    /**
+     * @param int number 
+     * @return
+     */
+    public void setQuestionNumber(void int number) {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public void tabulate() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public ResponseCorrectAnswer getUserAnswer() {
+        // TODO implement here
+        return null;
+    }
+
+}

@@ -1,0 +1,25 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public abstract class Output extends InputOutput {
+
+    
+
+    /**
+     * 
+     */
+    public void Output() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void getOutput() {
+        // TODO implement here
+    }
+
+}

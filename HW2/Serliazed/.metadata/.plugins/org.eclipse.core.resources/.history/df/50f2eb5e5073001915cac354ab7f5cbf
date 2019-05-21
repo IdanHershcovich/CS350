@@ -1,0 +1,46 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class TextInput extends Input {
+
+    private String userInput;
+    private ArrayList<String> userInputList;
+
+    /**
+     * 
+     */
+    public TextInput() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public String getTextInput() {
+        // TODO implement here
+        return userInput;
+    }
+    
+    public ArrayList<String> getTextInput1() {
+        // TODO implement here
+        return userInputList;
+    }
+
+    /**
+     * @param userInput 
+     * @return
+     */
+    public void setTextInput( String userText) {
+        // TODO implement here
+    	userInput = userText;
+    }
+    
+    public void setTextInput(ArrayList<String> userTextList)
+    {
+    	userInputList = userTextList;
+    }
+
+}

@@ -1,0 +1,64 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class SurveyMenu implements Menu {
+
+    /**
+     * Default constructor
+     */
+    public SurveyMenu() {
+    }
+
+    /**
+     * 
+     */
+    private int surveyOption;
+
+
+
+    /**
+     * 
+     */
+    public void SurveyMenu() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void save() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void load() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void create() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void show() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void quit() {
+        // TODO implement here
+    }
+
+}

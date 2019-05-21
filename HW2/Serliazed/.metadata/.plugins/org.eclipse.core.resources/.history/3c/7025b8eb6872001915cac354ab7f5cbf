@@ -1,0 +1,73 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class MultipleChoiceQuestion extends Questions {
+
+    /**
+     * Default constructor
+     */
+    public MultipleChoiceQuestion() {
+    }
+
+    /**
+     * 
+     */
+    private ArrayList<String> choices;
+
+    /**
+     * 
+     */
+    private String choice;
+
+    /**
+     * 
+     */
+    private int position;
+
+    /**
+     * 
+     */
+    private ArrayList<String> prompt;
+
+    /**
+     * 
+     */
+    public void MultipleChoiseQuestion() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void show() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void tabulate() {
+        // TODO implement here
+    }
+
+    /**
+     * @param String newChoice 
+     * @param int position 
+     * @return
+     */
+    public void editChoices( String newChoice,  int position) {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public int getPosition() {
+        // TODO implement here
+        return 0;
+    }
+
+}

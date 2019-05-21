@@ -1,0 +1,66 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class ShortAnswerQuestion extends EssayQuestion {
+
+    /**
+     * Default constructor
+     */
+    public ShortAnswerQuestion() {
+    }
+
+    /**
+     * 
+     */
+    private int lengthLimit;
+
+    /**
+     * 
+     */
+    public void ShortAnswerQuestion() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void checkLength() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public void show() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public int getLengthLimit() {
+        // TODO implement here
+        return 0;
+    }
+
+    /**
+     * @return
+     */
+    public void setLengthLimit() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void tabulate() {
+        // TODO implement here
+        return null;
+    }
+
+}

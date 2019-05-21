@@ -1,0 +1,34 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class Input extends InputOutput {
+
+    /**
+     * Default constructor
+     */
+    public Input() {
+    }
+
+    /**
+     * 
+     */
+    private String userInput;
+
+    /**
+     * 
+     */
+    public void Input() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void getInput() {
+        // TODO implement here
+    }
+
+}

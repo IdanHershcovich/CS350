@@ -1,0 +1,46 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class Test extends Survey {
+
+    /**
+     * Default constructor
+     */
+    public Test() {
+    }
+
+    /**
+     * 
+     */
+    private ArrayList<ResponseCorrectAnswer> answers;
+
+
+
+
+    /**
+     * 
+     */
+    public void Test() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void show() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public void editTest() {
+        // TODO implement here
+        return null;
+    }
+
+}

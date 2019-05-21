@@ -1,0 +1,59 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class FileOutput {
+
+    /**
+     * Default constructor
+     */
+    public FileOutput() {
+    }
+
+    /**
+     * 
+     */
+    protected String filePath;
+
+    /**
+     * 
+     */
+    protected String fileName;
+
+    /**
+     * 
+     */
+    public void FileOutput() {
+        // TODO implement here
+    }
+
+    /**
+     * @param String name 
+     * @param String Path 
+     * @return
+     */
+    public void load(void String name, void String Path) {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public String getFilePath() {
+        // TODO implement here
+        return "";
+    }
+
+    /**
+     * @param String path 
+     * @return
+     */
+    public void setFilePath(void String path) {
+        // TODO implement here
+        return null;
+    }
+
+}

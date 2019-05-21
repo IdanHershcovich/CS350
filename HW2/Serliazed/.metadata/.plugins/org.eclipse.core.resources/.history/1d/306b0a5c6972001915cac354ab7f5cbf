@@ -1,0 +1,43 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class TextInput extends Input {
+
+    /**
+     * Default constructor
+     */
+    public TextInput() {
+    }
+
+    /**
+     * 
+     */
+    private String userInput;
+
+    /**
+     * 
+     */
+    public void TextInput() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public String getTextInput() {
+        // TODO implement here
+        return "";
+    }
+
+    /**
+     * @param userInput 
+     * @return
+     */
+    public void setTextInput( userInput) {
+        // TODO implement here
+    }
+
+}

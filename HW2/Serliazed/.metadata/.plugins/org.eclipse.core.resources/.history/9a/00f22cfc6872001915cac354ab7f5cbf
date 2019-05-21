@@ -1,0 +1,34 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class Output extends InputOutput {
+
+    /**
+     * Default constructor
+     */
+    public Output() {
+    }
+
+    /**
+     * 
+     */
+    private void userOutput;
+
+    /**
+     * 
+     */
+    public void Output() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void getOutput() {
+        // TODO implement here
+    }
+
+}

@@ -1,0 +1,78 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class MatchingQuestion extends RankingQuestion {
+
+    /**
+     * Default constructor
+     */
+    public MatchingQuestion() {
+    }
+
+    /**
+     * 
+     */
+    private ArrayList<String> leftSideOptions;
+
+    /**
+     * 
+     */
+    private ArrayList<String> rightSideOptions;
+
+    /**
+     * 
+     */
+    public void MatchingQuestions() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void show() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param ResponseCorrectAnswer answer 
+     * @param int position 
+     * @return
+     */
+    public void addAnswer(void ResponseCorrectAnswer answer, void int position) {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param ResponseCorrectAnswer response 
+     * @param int position 
+     * @return
+     */
+    public void getResponse(void ResponseCorrectAnswer response, void int position) {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public void tabulate() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param StringList side 
+     * @param int position 
+     * @return
+     */
+    public void editOption(void StringList side, void int position) {
+        // TODO implement here
+        return null;
+    }
+
+}

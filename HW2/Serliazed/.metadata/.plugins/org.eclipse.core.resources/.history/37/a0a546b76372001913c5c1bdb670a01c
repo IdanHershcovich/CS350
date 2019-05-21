@@ -1,0 +1,51 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class EssayQuestion extends ShortAnswerQuestion {
+
+    /**
+     * Default constructor
+     */
+    public EssayQuestion() {
+    }
+
+    /**
+     * 
+     */
+    private String essay;
+
+    /**
+     * 
+     */
+    public void EssayQuestion() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public void show() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public void tabulate() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @return
+     */
+    public void editEssay() {
+        // TODO implement here
+        return null;
+    }
+
+}

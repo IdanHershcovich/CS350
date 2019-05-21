@@ -1,0 +1,72 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public abstract class Grader {
+
+    /**
+     * Default constructor
+     */
+    public Grader() {
+    }
+
+    /**
+     * 
+     */
+    private ArrayList<ResponseCorrectAnswer> correctAnswers;
+
+    /**
+     * 
+     */
+    private ArrayList<ResponseCorrectAnswer> userAnswers;
+
+    /**
+     * 
+     */
+    private float score;
+
+
+    /**
+     * @return
+     */
+    public float Grader() {
+        // TODO implement here
+        return 0.0f;
+    }
+
+    /**
+     * @return
+     */
+    public void show() {
+        // TODO implement here
+    }
+
+    /**
+     * @return
+     */
+    public ResponseCorrectAnswer getCorrectAnswers() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param ResponseCorrectAnswer ans 
+     * @return
+     */
+    public void setCorrectAnswers(void ResponseCorrectAnswer ans) {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param float newGrade 
+     * @return
+     */
+    public void editGrade(void float newGrade) {
+        // TODO implement here
+        return null;
+    }
+
+}

@@ -1,0 +1,23 @@
+import java.util.*;
+
+
+
+public class Main {
+
+	
+	 
+			
+    public static void main(String[] args) {
+        // TODO implement here
+    	TextOutput test = new TextOutput();
+    	String random = "hi";
+    	
+    	
+    	
+    	test.showTextOutput(random);
+    	System.out.println(random);
+    	
+    	
+    }
+
+}

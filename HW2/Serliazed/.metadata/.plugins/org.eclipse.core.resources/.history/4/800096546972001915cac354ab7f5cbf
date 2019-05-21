@@ -1,0 +1,63 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
+public class TestMenu implements Menu {
+
+    /**
+     * Default constructor
+     */
+    public TestMenu() {
+    }
+
+    /**
+     * 
+     */
+    private int menuOption;
+
+
+    /**
+     * 
+     */
+    public void TestMenu() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void save() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void load() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void create() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void show() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void quit() {
+        // TODO implement here
+    }
+
+}
