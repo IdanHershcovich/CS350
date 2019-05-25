@@ -6,67 +6,49 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-///**
-// * 
-// */
-//public class Serialization {
-// 
-//    /**
-//     * Default constructor
-//     */
-//    public Serialization() {
-//    }
-// 
-//    /**
-//     * @param String name 
-//     * @param Object obj
-//     */
-//    public void saveFile( String name,  Object obj) {
-//        // TODO implement here
-//    }
-//
-//    /** 
-//     * 
-//     */
-//    public void load() {
-//        // TODO implement here
-//    }
-//
-//}
-
-
 public class Serialization implements Serializable{
 	
 	/**
-	 * 
+	 Serialization methods to save and load surveys
 	 */
 	private static final long serialVersionUID = -59489478949289396L;
-	protected String relativePath = "surveys";
-	protected InputOutput io = new InputOutput();
+	protected String relativePath;
+	protected InputOutput io;
+	protected String surveyName;
+	protected String path;
 	
+	//Constructor class. Initializes the folder path, io surveyName and the filePath
 	public Serialization() {
-	
-	}
-	protected void save(Survey survey) throws IOException {
-		String surveyName, path;
-		io.getOutput().display("Please enter a name for this file: ");
-		String name = io.getInput().getUserInputString();
-
-		new File(relativePath + "/" + name).mkdir();
-		path = relativePath + "/" + name + "/" + name + ".ser";
+		relativePath = "surveys";
+		io = new InputOutput();
+		surveyName = "";
+		path = "";
 		
+	}
+	//Saves a survey and creates the directory in which to save the survey.
+	protected void save(Survey survey) throws IOException {
+		io.getOutput().display("Please enter a name for this file: ");
+		surveyName = survey.getName();
+
+		path = relativePath + "/" + surveyName + "/";
+		File filePath = new File(path);
+		filePath.mkdirs();
+
 		try {
-			FileOutputStream fileOut = new FileOutputStream(path);
+			path = relativePath + "/" + surveyName + "/" + surveyName + ".ser";
+			File file = new File(path);
+			FileOutputStream fileOut = new FileOutputStream(file);
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
 			out.writeObject(survey);
 			out.close();
 			fileOut.close();
-			io.getOutput().display("Saved in " + relativePath + "/" + name);
+			io.getOutput().display("Saved in " + relativePath + "/" + surveyName);
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
 	}
-	
+	//Loads the survey from the folder given by the relative path. Displays all of the files in the
+	//folder and then the user chooses
 	protected Survey load() throws NumberFormatException, IOException {
 		Survey survey = null;
 		int choice;
@@ -97,23 +79,7 @@ public class Serialization implements Serializable{
 		survey.filePath = relativePath + "/" + listOfFiles[choice - 1].getName();
 		return survey;
 	}
-	
-	protected void saveAnswers(String[] arr, String filePath) {
-		String path;
-		int numFiles = new File(filePath).list().length;
-		path = filePath + "/answers" + Integer.toString(numFiles) + ".ser";
-	
-		try {
-			FileOutputStream fileOut = new FileOutputStream(path);
-			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-			out.writeObject(arr);
-			out.close();
-			fileOut.close();
-			io.getOutput().display("Saved in " + path);
-		} catch (IOException i) {
-			i.printStackTrace();
-		}
-	}
+
 	
 	
 }

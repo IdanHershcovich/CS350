@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * 
+ Survey Object class. Contains initialization of a survey and methods for question related methods.  
  */
 public class Survey implements Serializable {
 
@@ -16,15 +16,14 @@ public class Survey implements Serializable {
     private String name;
 	protected String filePath;
 
-
-
+	//Initializes a question list, the name and io.
     public Survey() {
     	questionList = new ArrayList<Questions>();
     	this.setName("");
     	io = new InputOutput();
 
     }
-
+    //adds the type of question created by the admin to a question list
     public void createQuestion(Questions q) throws IOException {
     	this.questionList.add(q);
        
@@ -37,18 +36,21 @@ public class Survey implements Serializable {
     public void editQuestion( int questionNumber) {
         // TODO implement here
     }
+    
 
     public void deleteQuestion( int questionNum) {
     	this.questionList.remove(questionNum);
     }
 
+    //Displays the survey. It shows the name, the number of questions in the survey and then loops
+    //through them and shows the prompt.
     public void display() {
     	io.getOutput().display("Survey name: " + this.getName());
 		io.getOutput().display("Number of questions: " + this.questionList.size());
 		
 		for (int i = 0; i < this.questionList.size(); i++) {
 			io.getOutput().display("Question " + (i+1) + ": ");
-			io.getOutput().display((this.getQuestion(this.questionList.get(i))));
+			io.getOutput().display(this.getQuestion(questionList.get(i)) + "\n");
 		}
     }
 
@@ -71,7 +73,6 @@ public class Survey implements Serializable {
     	
     }
 		
-   
 
 	public String getName() {
 		return name;

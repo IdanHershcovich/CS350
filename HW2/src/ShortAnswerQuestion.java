@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 /**
  * 
  */
@@ -11,10 +13,11 @@ public class ShortAnswerQuestion extends EssayQuestion {
 
 
 
-
+    //Short Answer class. Very similar to essay, but it has a method to check for the length of the user's response
     public ShortAnswerQuestion() {
-    	lengthLimit = 0;
-    	prompt = "";
+    	this.lengthLimit = 0;
+    	this.prompt = "";
+    	this.amountOfAnswers = 1;
     }
 
     public void checkLength() {
@@ -25,27 +28,28 @@ public class ShortAnswerQuestion extends EssayQuestion {
     }
     
     public void display() {
-        io.getOutput().display(prompt);
+        io.getOutput().display(prompt + "\n");
         io.getOutput().display("Your question must be less than " + this.getLengthLimit() + " words");
 
      }
+    
+    public void buildQuestion() throws IOException {
+		io.getOutput().display("Enter the prompt for your Short Answer question: \n");
+		this.setPrompt(getUserInputString());
+		io.getOutput().display("Enter the maximum length of words for your short answer question.  \n");
+		this.setLengthLimit(io.getInput().getInputInt());
+	}
 
    
     public int getLengthLimit() {
-        // TODO implement here
+        
         return this.lengthLimit;
     }
 
-    /**
-     * @return
-     */
     public void setLengthLimit(int limit) {
        this.lengthLimit = limit;
     }
 
-    /**
-     * @return
-     */
     public void tabulate() {
         // TODO implement here
         

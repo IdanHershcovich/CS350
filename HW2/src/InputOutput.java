@@ -2,7 +2,10 @@
  * 
  */
 public class InputOutput implements java.io.Serializable {
-
+	/**
+	 Class that instantiates the input and output objects to be instantiated 
+	 in the other classes.
+	 */
     
 	private static final long serialVersionUID = 7047043786352590310L;
 	
@@ -23,7 +26,6 @@ public class InputOutput implements java.io.Serializable {
 	}
 	public Input getInput() {
 		return input;
-		
 		
 	}
 	public void setInput(Input textInput) {

@@ -3,17 +3,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * 
+ Multiple Choice Question. Instantiates a new question with amount of prompts chosen by admin
  */
 public class MultipleChoiceQuestion extends Questions {
 
 	private static final long serialVersionUID = -6134938477523176073L;
-	private int amountOfAnswers;
 	protected int numOfPrompts;
 
 	public MultipleChoiceQuestion() {
 		prompt = "";
-		amountOfAnswers = 0;
+		this.amountOfAnswers = 0;
 		this.choices = new ArrayList<String>();
 		numOfPrompts = 0;
 
@@ -27,12 +26,14 @@ public class MultipleChoiceQuestion extends Questions {
 		this.numOfPrompts = numOfPrompts;
 	}
 
+	/**
+	 Builds question for this type of question. gets prompt and choices from the admin
+	 */
 	public void buildQuestion() throws IOException {
 		io.getOutput().display("Enter the prompt for your Multiple Choice question: \n");
 		this.setPrompt(getUserInputString());
 		io.getOutput().display("Enter the number of choices for your multiple-choice question.  \n");
 		this.setNumOfPrompts(io.getInput().getInputInt());
-		io.getOutput().display("Enter the number of answers for your multiple-choice question.  \n");
 		
 		for (int i = 0; i < this.numOfPrompts; i++) {
 			io.getOutput().display("Enter choice #" + (i + 1) + "\n");
@@ -40,8 +41,12 @@ public class MultipleChoiceQuestion extends Questions {
 		}	
 	}
 
+	/**
+	Displays the question in the console. loops through the amount of choices and 
+	adds a letter before the choice for readability and answering.
+	 */
 	public void display() {
-		io.getOutput().display(this.getPrompt());
+		io.getOutput().display(this.getPrompt() + "\n");
 		for (int i = 0; i < this.choices.size(); i++) {
 			io.getOutput().display((char) ('A' + i) + ". " + this.choices.get(i) + " ");
 		}
@@ -62,13 +67,5 @@ public class MultipleChoiceQuestion extends Questions {
 
 	public void setChoices(String prompt) {
 		this.choices.add(prompt);
-	}
-
-	public int getAmountOfAnswers() {
-		return amountOfAnswers;
-	}
-
-	public void setAmountOfAnswers(int amountOfAnswers) {
-		this.amountOfAnswers = amountOfAnswers;
 	}
 }

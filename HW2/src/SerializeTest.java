@@ -7,35 +7,49 @@ import java.io.ObjectOutputStream;
 
 public class SerializeTest extends Serialization {
 	/**
-	 * 
+	 Serialization for test. Very similar to the regular serialization, but for the Test object and with the appropriate paths
 	 */
 	private static final long serialVersionUID = 5067335843701878545L;
 	/**
 	 * 
 	 */
-	private String relativePath = "tests";
+	protected String relativePath;
+	protected InputOutput io;
+	protected String testName;
+	protected String path;
+	
+	public SerializeTest() {
+		relativePath = "tests";
+		io = new InputOutput();
+		testName = "";
+		path = "";
+	}
 	
 	protected void save(Test test) throws IOException {
-		String testName, path;
 		io.getOutput().display("Please enter a name for this file: ");
-		testName = io.getInput().getUserInputString();
-		File newDir = new File(relativePath + "/" + test);
-		newDir.mkdir();
-		path = relativePath + "/" + test + "/" + test + ".ser";
+		testName = test.getName();
+
+		path = relativePath + "/" + testName + "/";
+		File filePath = new File(path);
+		filePath.mkdirs();
+
+		
 		try {
-			FileOutputStream fileOut = new FileOutputStream(path);
+			path = relativePath + "/" + testName + "/" + testName + ".ser";
+			File file = new File(path);
+			FileOutputStream fileOut = new FileOutputStream(file);
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
 			out.writeObject(test);
 			out.close();
 			fileOut.close();
-			io.getOutput().display("Saved in " + relativePath + "/" + test);
+			io.getOutput().display("Saved in " + relativePath + "/" + testName);
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
 	}
 	
 	protected Test load() throws IOException {
-		Test test = new Test();
+		Test test = null;
 		int choice;
 		String name;
 		File folder = new File(relativePath);
@@ -47,6 +61,7 @@ public class SerializeTest extends Serialization {
 		}
 		
 		choice = Integer.parseInt(io.getInput().getUserInputString());
+
 		name = relativePath + "/" + listOfFiles[choice - 1].getName() + "/" + listOfFiles[choice - 1].getName() + ".ser";
 		   try {
 		         FileInputStream fileIn = new FileInputStream(name);
